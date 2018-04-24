@@ -1,12 +1,12 @@
 {
   "name": "portfolio-project",
   "version": "1.0.0",
-  "description": "udacity front end nanodegree project",
+  "description": "A udacity full stack nanodegree project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Erika LeBlanc",
+  "author": "Vivek Menon",
   "license": "ISC",
   "devDependencies": {
     "grunt-responsive-images": "^0.1.9"
