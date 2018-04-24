@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vivek Menon - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- custom bootstrap css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+<!-- jquery for bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap javascript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300%7CLora">
+<!-- font awesome -->
+    <script src="https://use.fontawesome.com/62db1f9eca.js"></script>
+  </head>
+  <body>
+
+<!-- open flex container -->
+    <section class="flex-container">
+<!-- open header -->
+      <header class="row header-container">
+        <div class="col-6 logo">
+          <img src="img/vSliced.jpg" width="30%" id="logo" alt="My logo"> </div>
+        <div class="col-6 main-title">
+          <h1>Vivek Menon</h1>
+          <h4>Developer</h4>
+        </div>
+<!-- open bootstrap nav -->
+        <nav class="row navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target= "#collapse-navbar">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+            <div class="collapse navbar-collapse" id="collapse-navbar">
+              <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-item" href="#featured">Featured Work</a></li>
+                <li class="nav-item"><a class="nav-item" href="#contact">Contact</a></li>
+              </ul>
+          </div>
+        </nav>  <!-- end nav -->
+      </header>  <!-- end header -->
+      <div class="row hero">
+        <img class="col-12 hero-img" src="img/1.jpg" alt="close up of a mosaic in pastel blues, greens and pinks">
+      </div>
+      <h2 class="row portfolio-title" id="featured">Featured Work</h2>
+      <section class="row portfolio">
+        <div class="col-6 project">
+          <a href="http://www.github.com">
+            <img class="project-img" src="img/2.jpg" alt="A beach?">
+          </a>
+          <a href="http://www.github.com">
+          <h3>Project One</h3>
+          <p>Udacity Front-End Web development Nanodegree.</p>
+          </a>
+        </div>
+        <div class="col-6 project">
+          <a href="http://www.github.com">
+            <img class="project-img" src="img/3.jpg" alt="Desert stuff.">
+          </a>
+          <a href="http://www.github.com">
+          <h3>Project Two</h3>
+          <p>Udacity Front-End Web development Nanodegree.</p>
+          </a>
+        </div>
+        <div class="col-6 project">
+          <a href="http://www.github.com">
+            <img class="project-img" src="img/4.jpg" alt="Sunset.">
+          </a>
+          <a href="http://www.github.com">
+          <h3>Project Three</h3>
+          <p>Udacity Front-end Web development Nanodegree.</p>
+          </a>
+        </div>
+      </section>
+
+<!-- open footer -->
+      <footer class="row col-12" id="contact">
+        <ul>
+          <li><a href="https://github.com/vvkmnn" target="blank"><i class="fa fa-github-alt fa-2x"></i></a>
+          </li>
+          <li><a href="https://twitter.com/vvkmnn" target="blank"><i class="fa fa-twitter fa-2x"></i></a>
+          </li>
+          <li><a href="https://ca.linkedin.com/in/vvkmnn" target="blank"><i class="fa fa-linkedin fa-2x"></i></a>
+          </li>
+          <li><a href="http://www.vvkmnn.xyz" target="blank"><i class="fa fa-home fa-2x"></i></a>
+          </li>
+        </ul>
+      </footer>  <!-- close footer -->
+    </section>  <!-- close container -->
+
+    <script>
+    $('a[href*=\\#]')
+        .on('click', 
+            function(event){
+        event.preventDefault();
+
+    $('html,body')
+        .animate({scrollTop:$(this.hash)
+        .offset()
+        .top}, 500);
+});
+    </script>
+  </body>
+</html>
